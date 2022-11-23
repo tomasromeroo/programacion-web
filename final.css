@@ -1,0 +1,40 @@
+.anchocompleto{
+    width: 100%;
+}
+.fondonegro{
+
+    background-color: black;
+}
+
+.negro{
+    color: black;
+
+}
+
+.margenes_cards {
+    
+        margin-left: 10px;
+        margin-right: 10px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+      
+}
+
+footer{
+    background-color: rgb(46, 45, 45);
+}
+
+.pie{
+    width: 100%;
+    padding: 10%;
+}
+div.gallery {
+    border: 1px solid black;
+  }
+
+.ubicarboton{
+    
+    justify-content: flex-end;
+
+
+  }

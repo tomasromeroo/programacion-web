@@ -1,52 +1,384 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Paguina web de practica</title>
-    <style></style>
-    <link rel="stylesheet" href="./css/style.css">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="final.css">
 </head>
 <body>
-    <header></header>
-        <h1 class="titular3">----este es el titulo en h1----</h1>
-        <h2 id="titulo2">Texto en tamaño mediano h2</h2>
-        <!-- menu de navegacion y logo -->
-        <!-- contenido que quiero mostrar   -->
+
+  
+  <div class="row">
+
+    <div>
+   <img src="https://i.ibb.co/VwYG2HN/The-Clone-Company.png"  class="anchocompleto"  alt="The Clone Company">
+    </div>
+    
+<header class="fondonegro">
+ 
+    <section>
+      <div class="row">
+      <div class="carro fondonegro col-6" id="calculadora">
+        <div class="textocalculadora">
+          <div id="ladodepedidos">
+            <div class="container"><h3 class="text-white d-flex justify-content-center"> Pedime tu vinito </h3>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-6">
+      <div class="row mx-4 fondonegro">
+        <div class="col fondonegro">
+         <div class="zona_calculo fondonegro">
+            <h3 class="itemCartTotal text-white" id="Total">Total: 0</h3>
+
+              <div class="row">
+
+              <div class="col-sm-12 col-mg-6 col-lg-5">
+              <div>
+                <button type="button" class="btn btn-primary " onclick="Borrar()">Vaciar Carrito</button>
+              </div>
+            </div>
+
+              <div class="col-sm-12 col-mg-6 col-lg-5">
+              <div>
+                <a href="formulario.html"><button class="btn btn-success">COMPRAR</button></a>
+              </div>
+            </div>
+
+          </div>
+
+
+          </div>
+      </div>
+    </div>
+  </div>
+  </div>
+</div>
+</section>
+</header> 
+
+<main>
+
+    <div>
+    <img src="https://i.ibb.co/X5NfFrt/banner1-vinosa.jpg"  class = "anchocompleto d-s-none" alt="banner1-vinosa" >
+  </div>
+
+
+  <div class="row d-flex justify-content-center">
+    <div class="col-sm-12 col-md-3 d-flex justify-content-center margenes_cards"> 
+      <div class="card" style="width: 18rem;">
+        <img src="https://i.ibb.co/Z1dLcPz/Vega-Sicilia-Unico-1999-750cc.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Vega Sicilia Unico 1999 750cc</h5>
+          <p class="card-text">Es el vino de referencia de Vega Sicilia . Prodede de las viñas mas biejas de la propiedad .Es un vino muy lago de sabor , con raza .Color cereza con ribetes rubi. Nariz , basada en la complejidad aromatica , donde existen notas e ebanisteria, compota y aromas balsamicos a mentol y romero .</p>
+          <!--<a href="#" class="btn btn-primary"> Añadir por $812.080</a> -->
+          <div class="d-flex justify-content-center ">
+            <button
+              type="button"
+              class="btn btn-primary "
+              onclick="sumarprecio(812080)"
+              class="boton-agregar">
+              Añadir por $812.080
+              <i class="fas fa-shopping-cart"></i>
+            </button>
+        </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-sm-12 col-md-3 d-flex justify-content-center margenes_cards">
+      <div class="card" style="width: 18rem;">
+        <img src="https://vinotecaligier.com/media/catalog/product/cache/1/small_image/430x320/9df78eab33525d08d6e5fb8d27136e95/b/e/be03132_1.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">D.V Catena Cabernet Malbec 2005 </h5>
+          <p class="card-text">La cosecha 2005 de Catena Malbec presenta un profundo color violeta opaco. Este corte o blend de cuatro microclimas de altura únicos ofrece un intenso aroma, con gran concentración de sabores y una textura voluptuosa y aterciopelada</p>
+          <!-- <a href="#" class="btn btn-primary d-flex justify-content-center">Añadir al carrito</a> -->
+         
+          <div class="d-flex justify-content-center ">
+            <button
+              type="button"
+              class="btn btn-primary "
+              onclick="sumarprecio(48435)"
+              class="boton-agregar">
+              Añadir por $48.435
+              <i class="fas fa-shopping-cart"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-sm-12 col-md-3 d-flex justify-content-center margenes_cards">
+      <div class="card" style="width: 18rem;">
+        <img src="https://i.ibb.co/mrsZ552/Felipe-Rutini-1982-750-5238725.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Felipe Rutini 1987 </h5>
+          <p class="card-text">tiqueta ultra premium de la bodega, elegido entre los 50 Top Wines de América del Sur y es el mejor puntuado entre los vinos argentinos de bodegas tradicionales. Su producción se inició en 1985, como homenaje a Don Felipe Rutini y al centenario de labor de la bodega que él fundara. Fue el primer vino argentino en llevar un nombre propio en la etiqueta.</p>
+          <!--<a href="#" class="btn btn-primary d-flex justify-content-center">Añadir por $5238725</a> -->
+
+          <div class="d-flex justify-content-center ">
+            <button
+              type="button"
+              class="btn btn-primary "
+              onclick="sumarprecio(323892)"
+              class="boton-agregar">
+              Añadir por $323.892
+              <i class="fas fa-shopping-cart"></i>
+            </button>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="row d-flex justify-content-center">
+    <div class="col-sm-12 col-md-3 d-flex justify-content-center margenes_cards"> 
+      <div class="card" style="width: 18rem;">
+        <img src="https://i.ibb.co/z2WC2zj/Catena-Zapata-Estiba-Reservada-1991-750-10073743.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Catena Zapata Estiba Reservada 1991 750
+          </h5>
+          <p class="card-text">De profundo color púrpura, su aroma remite a frutos rojos y negros maduros suavemente entrelazados con notas de menta y eucaliptus. En boca es un vino de gran concentración y suavidad a la vez, con sutiles notas de tostado y vainilla armoniosamente integradas a la fruta.</p>
+          <!--<a href="#" class="btn btn-primary d-flex justify-content-center">Añadir al carrito</a> -->
+
+          <div class="d-flex justify-content-center ">
+            <button
+              type="button"
+              class="btn btn-primary "
+              onclick="sumarprecio(10073747)"
+              class="boton-agregar">
+              Añadir por $10.073.747 
+              <i class="fas fa-shopping-cart"></i>
+            </button>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <div class="col-sm-12 col-md-3 d-flex justify-content-center margenes_cards">
+      <div class="card" style="width: 18rem;">
+        <img src="https://i.ibb.co/Y8ncGmC/Bressia-Monteagrelo-Malbec-2008-17550.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Bressia Monteagrelo Malbec 2008 750 </h5>
+          <p class="card-text">Tiene una crianza del 80% del blend criado durante 18 meses en barricas de roble francés y americano. Este delicado Malbec impacta de inmediato por su color rojo intenso, con tonalidades púrpuras y entorno negro. En nariz es fuertemente atractivo, al ofrecer una combinación exquisita de aromas de frutos rojos y negros, combinados con la vainilla, el chocolate y el café, gracias a su paso por roble.</p>
+          <!--<a href="#" class="btn btn-primary d-flex justify-content-center">Añadir al carrito</a> -->
+
+          <div class="d-flex justify-content-center ">
+            <button
+              type="button"
+              class="btn btn-primary "
+              onclick="sumarprecio(17550)"
+              class="boton-agregar">
+              Añadir por $17.550
+              <i class="fas fa-shopping-cart"></i>
+            </button>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <div class="col-sm-12 col-md-3 d-flex justify-content-center margenes_cards">
+      <div class="card" style="width: 18rem;">
+        <img src="https://i.ibb.co/bddhn10/Fabre-Montmayou-Grand-Vin-1994-5000-2233800.jpg"  class="card-img-top" alt="Fabre-Montmayou-Grand-Vin-1994-5000-2233800">
+        <div class="card-body">
+          <h5 class="card-title">Montmayou Grand Vin 1994 5000ml</h5>
+          <p class="card-text">Color rojo intenso con notas violetas intensas. El buqué, atractivo y encantador, ofrece una explosión de frutas como la cereza roja y la ciruela. El roble francés añade deliciosas notas de vainilla y de café y aporta una complejidad interesante. En boca el vino es rico y bien estructurado con taninos suaves. El final es largo y elegante. Perfecto platos delicados, carnes a la parrilla y postres de chocolate.
+          </p>
+          <!--<a href="#" class="btn btn-primary d-flex justify-content-center">Añadir al carrito</a> -->
+
+          <div class="d-flex justify-content-center ">
+            <button
+              type="button"
+              class="btn btn-primary "
+              onclick="sumarprecio(2233800)"
+              class="boton-agregar">
+              Añadir por $2.233.800
+              <i class="fas fa-shopping-cart"></i>
+            </button>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="row d-flex justify-content-center">
+    <div class="col-sm-12 col-md-3 d-flex justify-content-center margenes_cards"> 
+      <div class="card" style="width: 18rem;">
+        <img src="https://i.ibb.co/j4qdssc/Saurus-Pinot-Noir-Tardio-2011-500-22500.jpg"  class="card-img-top" alt="Saurus-Pinot-Noir-Tardio-2011-500-22500">
+        <div class="card-body">
+          <h5 class="card-title">Saurus Pinot Noir Tardio 2011</h5>
+          <p class="card-text">Dulce y maduro son los rasgos de personalidad que devienen del proceso de fermentación tradicional. El paso del tiempo se expresa en la copa con lágrimas marcadas y una intensa coloración.De cuerpo importante y rasgos distinguidos, conmueve con su cautivante personalidad a los más exquisitos paladares. Saurus Pinot Noir Tardío, de color rojo suave con destellos naranjas, de aromas volátiles que refieren a minerales, polen, miel y fruta madura, es el compañero ideal para una cuidada sobremesa en donde el final dulce se hace entrañable. </p>
+          <!-- <a href="#" class="btn btn-primary d-flex justify-content-center">Añadir al carrito</a> -->
+          <div class="d-flex justify-content-center ">
+            <button
+              type="button"
+              class="btn btn-primary "
+              onclick="sumarprecio(22500)"
+              class="boton-agregar">
+              Añadir por $22.500
+              <i class="fas fa-shopping-cart"></i>
+            </button>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <div class="col-sm-12 col-md-3 d-flex justify-content-center margenes_cards">
+      <div class="card" style="width: 18rem;">
+        <img src="https://i.ibb.co/tPDBR2v/Concha-Y-Toro-Don-Melchor-Cabernet-Sauvignon-750-45908.jpg"  class="card-img-top" alt="Concha-Y-Toro-Don-Melchor-Cabernet-Sauvignon-750-45908 ">
+        <div class="card-body">
+          <h5 class="card-title"> Concha Y Toro Don Melchor Cabernet Sauvignon 750 </h5>
+          <p class="card-text">Vino rojo cereza profundo. Cautiva por su equilibrio, profundidad y complejidad. Los aromas de frutos rojos se van entremezclando delicadamente con sus notas minerales, como cenizas frías y grafito. Texturas finas y delicadas aparecen en boca, mostrando un vino amplio, profundo, con un ataque suave y fino, seguido por una evolución llena e intensa.Concentrado y expresivo, generoso en sus sabores y aromas, con un final largo y dominado por el balance y fineza de las diferentes capas de sabores.</p>
+          <!--<a href="#" class="btn btn-primary d-flex justify-content-center">Añadir al carrito</a> -->
+          <div class="d-flex justify-content-center ">
+            <button
+              type="button"
+              class="btn btn-primary "
+              onclick="sumarprecio(45908)"
+              class="boton-agregar">
+              Añadir por $45.908
+              <i class="fas fa-shopping-cart"></i>
+            </button>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <div class="col-sm-12 col-md-3 d-flex justify-content-center margenes_cards">
+      <div class="card" style="width: 18rem;">
+        <img src="https://i.ibb.co/yVyf8XW/Achaval-Ferrer-Finca-Altamira-Malbec-2015-750-77400.jpg"  class="card-img-top" alt="Achaval-Ferrer-Finca-Altamira-Malbec-2015-750-77400">
+        <div class="card-body">
+          <h5 class="card-title">Achaval Ferrer Finca Altamira Malbec 2015</h5>
+          <p class="card-text">No es poco mérito ponerle nombre a un lugar. Es el caso de este vino, que fue el primero en usar Altamira en la etiqueta, elaborado con un viñedo originalmente raquítico a la vera del río Tunuyán. Un vino complejo, combina ciruela fresca con violetas y tomillo, entreverados con un roble presente como es estilo en la casa. Boca jugosa, con estructura justa y sabor franco, donde los taninos aprietan el paso y garantizan longevidad</p>
+          <!-- <a href="#" class="btn btn-primary d-flex justify-content-center">Añadir al carrito</a> -->
+
+          <div class="d-flex justify-content-center ">
+            <button
+              type="button"
+              class="btn btn-primary "
+              onclick="sumarprecio(77400)"
+              class="boton-agregar">
+              Añadir por $77.400
+              <i class="fas fa-shopping-cart"></i>
+            </button>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="row d-flex justify-content-center">
+    <div class="col-sm-12 col-md-3 d-flex justify-content-center margenes_cards"> 
+      <div class="card" style="width: 18rem;">
+        <img src="https://i.ibb.co/Js99c6Z/Fabre-Montmayou-Merlot-1993-82080.jpg"  class="card-img-top" alt="Fabre-Montmayou-Merlot-1993-82080">
+        <div class="card-body">
+          <h5 class="card-title">Fabre Montmayou Merlot 1993</h5>
+          <p class="card-text">Es un vino elaborado en Luján de Cuyo, Mendoza. Cuenta con una crianza de 60 % del vino en roble francés durante 12 meses. Es de color rojo cereza muy intenso. Los aromas son una notable combinación de bayas silvestres, vainilla y café. En boca el vino es aterciopelado y complejo, afrutado, con un final agradable. Perfecto para acompañar carnes a la parrilla, pastas y quesos blandos.
+          </p>
+          <!--<a href="#" class="btn btn-primary d-flex justify-content-center">Añadir al carrito</a> -->
+
+          <div class="d-flex justify-content-center ">
+            <button
+              type="button"
+              class="btn btn-primary "
+              onclick="sumarprecio(82080)"
+              class="boton-agregar">
+              Añadir por $82.080
+              <i class="fas fa-shopping-cart"></i>
+            </button>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <div class="col-sm-12 col-md-3 d-flex justify-content-center margenes_cards">
+      <div class="card" style="width: 18rem;">
+        <img src="https://i.ibb.co/xfPVGq7/Yacochuya-2001-750-204744.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Yacochuya 2001  </h5>
+          <p class="card-text">Cosechado a mano, en cajas de 18 kg. Cada una, en su maduración óptima. Mesa de selección. Fermentación Maloláctica en barrica. Sin filtrar. De color brillante, con un intenso color violeta.
+            Aroma intenso, entrada dulce, acidez equilibrada con un carácter frutal muy marcado, y un aporte de roble que le da complejidad.
+            En boca repite el carácter frutado, con buena tipicidad varietal, toques especiados, taninos firmes y maduros. Leve gusto de pimiento aportado por el Cabernet Sauvignon.</p>
+            <!-- <a href="#" class="btn btn-primary d-flex justify-content-center">Añadir al carrito</a> -->
+
+            <div class="d-flex justify-content-center ">
+              <button
+                type="button"
+                class="btn btn-primary "
+                onclick="sumarprecio(204744)"
+                class="boton-agregar">
+                Añadir por $204.744
+                <i class="fas fa-shopping-cart"></i>
+              </button>
+            </div>
+
+        </div>
+      </div>
+    </div>
+
+    <div class="col-sm-12 col-md-3 d-flex justify-content-center margenes_cards">
+      <div class="card" style="width: 18rem;">
+        <img src="https://i.ibb.co/1qyWGFc/Saint-Felicien-Cabernet-Sauvignon-1978.jpg"  class="card-img-top" alt="Saint-Felicien-Cabernet-Sauvignon-1978">
+        <div class="card-body">
+          <h5 class="card-title">Saint Felicien Cabernet Sauvignon 1978 </h5>
+          <p class="card-text">Saint Felicien Cabernet Sauvignon es un vino elegante y complejo, de color rojo rubí profundo. Se perciben en este vino aromas a frutas rojas, como cerezas y ciruelas maduras, junto a fragancias especiadas, tal como pimienta negra, y notas suaves de eucaliptus. En la boca resulta un vino complejo, de buen cuerpo y estructura, taninos suaves, maduros y excelente longitud e intensidad. En el final de boca aparecen delicados sabores tostados y a vainilla. </p>
+          <!--<a href="#" class="btn btn-primary d-flex justify-content-center">Añadir al carrito</a>-->
+        
+          <div class="d-flex justify-content-center">
+            <button
+              type="button"
+              class="btn btn-primary "
+              onclick="sumarprecio(308532)"
+              class="boton-agregar">
+              Añadir por $308.532
+              <i class="fas fa-shopping-cart"></i>
+            </button>
+          </div>
         
 
-        
+        </div>
+      </div>
+    </div>
 
-        <h3>esto esta en h3</h3>
-        <!--Las H son el tamaño del texto hay que ordenar bien esta cuestion-->
+  </div>
 
-        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consectetur quod cum, ad voluptate nesciunt possimus odio sequi blanditiis omnis corporis sit totam, soluta ab dolore minima adipisci velit doloribus tempore!</p>
-        <!--si pongo loron *n me pone la cantidad de parrafos n-->
+</main>
 
-        <img src="https://www.fillmurray.com/g/155/300" alt="imagen no encontrada"> 
-        6   <!--etiqueta para imagenes.. tiene une estructura de etiqueda y luego un valor. sea la imagen o el texto alternativo alt=  -->
-        <!--Etiquetas bloques-->
-        <!--para listas -->
-        <ul>
-            <li>COSA1</li>
-            <li>COSA2</li>
-            <li>COSA3</li>
-            <li>COSA4</li>
-        </ul>
-        <ol>
-            <li>COSA1</li>
-            <li>COSA2</li>
-            <li>COSA3</li>
-            <li>COSA4</li>
-        </ol>
-    <footer>
-        <a>https://www.netflix.com/ar/Login</a> <!--esta es la etiquetas para hipervinculos
-    -->
-        <!-- contacto, mapa del sitio, legales -->
-        este es el  footer 
-    </footer>
+<Footer>
+
+<div class="pie">
+  
+
+  <div class="row ">
+    <div class="col-6 d-flex justify-content : flex-start text-white"> <h1>legales </h1> </div>
+
+    <div class="col-6 text-white"> <h3>Esta prohibida la venta y distibucion de cualquiera de nuestros productos a menores de 18 años.
+      <br>
+      Se recomienda beber con moderacion 
+    </h3> </div>
+  </div>
+
+</div>
+<script src="final.js"></script>
+
+</Footer>
+
+
+    
 </body>
-
 </html>
